@@ -31,26 +31,32 @@ if (menuBtn && drawer) {
 
 // Active nav link while scrolling
 const sections = Array.from(document.querySelectorAll("main section[id]"));
-const navLinks = Array.from(document.querySelectorAll(".nav__link"));
+const navLinks = Array.from(document.querySelectorAll(".nav__link, .drawer__link"));
 
 function setActiveHash(hash) {
   for (const a of navLinks) a.classList.toggle("is-active", a.getAttribute("href") === hash);
 }
 
-const activeObserver = new IntersectionObserver(
-  (entries) => {
-    const visible = entries
-      .filter((e) => e.isIntersecting)
-      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-    if (!visible) return;
-    const hash = `#${visible.target.id}`;
-    setActiveHash(hash);
-  },
-  { rootMargin: "-35% 0px -55% 0px", threshold: [0.1, 0.2, 0.35, 0.5, 0.65] }
-);
+function updateActiveHash() {
+  const scrollPosition = window.scrollY + 120;
+  let current = "#accueil";
 
-for (const s of sections) activeObserver.observe(s);
-setActiveHash(window.location.hash || "#accueil");
+  for (const section of sections) {
+    if (section.offsetTop <= scrollPosition) {
+      current = `#${section.id}`;
+    }
+  }
+
+  setActiveHash(current);
+}
+
+window.addEventListener("scroll", updateActiveHash);
+window.addEventListener("load", updateActiveHash);
+window.addEventListener("hashchange", () => setActiveHash(window.location.hash || "#accueil"));
+
+for (const link of navLinks) {
+  link.addEventListener("click", () => setTimeout(updateActiveHash, 120));
+}
 
 // Reveal on scroll
 const revealEls = Array.from(document.querySelectorAll("[data-reveal]"));
