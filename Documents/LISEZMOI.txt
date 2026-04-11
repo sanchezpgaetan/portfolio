@@ -1,0 +1,28 @@
+Arborescence des fichiers (portfolio)
+
+Documents/
+  cv/
+    CV.pdf
+      -> bouton « Télécharger mon CV » (section Compétences)
+
+  epreuve-e5/
+    01-veille-feedflow.pdf
+    02-portfolio-html-css.pdf
+    03-dmz-sftp-appli-frais.pdf
+    04-reseau-m2l-vlan-routeurs.pdf
+    05-migration-windows-10-11.pdf
+    06-gpo-glpi-inventaire-sites.pdf
+    07-documentation-vaulwarden.pdf
+      -> cartes « Epreuve E5 » (renomme tes PDF comme ci-dessus ou change les liens dans index.html)
+
+  TP/
+    premiere-annee/<thème>/*.pdf   (ex. Architecture, Cyber, Support, Système et réseau)
+    seconde-annee/<thème>/*.pdf
+  tp/
+    tp-manifest.json          (rel + libellé « Thème — TP n »)
+    regenerate-manifest.ps1   (régénère le manifeste après ajout de PDF)
+      -> section TP : script.js charge tp-manifest.json
+
+  Section « Veille technologique »
+    Les sources sont des liens web dans index.html (grille 2 colonnes),
+    pas de PDF obligatoire pour cette partie.

@@ -3,334 +3,334 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio SANCHEZ-PORRO Gaëtan</title>
-    <meta name="description" content="Portfolio pour la fin d'étude BTS SIO SISR : Accueil, Formation, Compétences, Documentation et Contact." />
+    <meta name="color-scheme" content="dark" />
+
+    <title>Portfolio — Gaëtan</title>
+    <meta
+      name="description"
+      content="Portfolio de Gaëtan — BTS SIO SISR. Projets, compétences, Formation et documents."
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#accueil">Aller au contenu</a>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Space+Grotesk:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Ambient background orbs -->
-    <div class="bg-orbs" aria-hidden="true">
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-      <div class="orb orb-3"></div>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%234a8cff' d='M50 6l38 22v44L50 94 12 72V28z'/%3E%3Cpath fill='%23050f0b' d='M50 16l28 16v36L50 84 22 68V32z'/%3E%3C/svg%3E" />
+  </head>
+
+  <body>
+    <a class="skip" href="#contenu">Aller au contenu</a>
+
+    <div class="bg" aria-hidden="true">
+      <div class="bg__grid"></div>
+      <div class="bg__glow bg__glow--a"></div>
+      <div class="bg__glow bg__glow--b"></div>
     </div>
 
-    <header class="site-header">
-      <div class="brand">
-        <div class="brand-mark" aria-hidden="true">SIO</div>
-        <div>
-          <div class="brand-title">Portfolio de SANCHEZ-PORRO Gaëtan</div>
-        </div>
+    <header class="topbar">
+      <div class="topbar__inner">
+        <a class="logo" href="#accueil" aria-label="Retour à l’accueil">
+          <span class="logo__mark" aria-hidden="true">G</span>
+          <span class="logo__text">
+            <span class="logo__title">Gaëtan</span>
+            <span class="logo__sub">BTS SIO · SISR</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Navigation principale">
+          <a class="nav__link" href="#accueil">Accueil</a>
+          <a class="nav__link" href="#competences">CV</a>
+          <a class="nav__link" href="#documents">Epreuve E5</a>
+          <a class="nav__link" href="#Formation">Formation</a>
+          <a class="nav__link" href="#tp">TP</a>
+          <a class="nav__link" href="#veille">Veille</a>
+          <a class="nav__link" href="#contact">Contact</a>
+        </nav>
+
+        <button class="menu" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+          <span class="menu__bar" aria-hidden="true"></span>
+          <span class="menu__bar" aria-hidden="true"></span>
+          <span class="menu__bar" aria-hidden="true"></span>
+        </button>
       </div>
 
-      <nav class="tabs" aria-label="Navigation du portfolio">
-        <button class="tab" type="button" data-target="accueil" aria-controls="accueil">Accueil</button>
-        <button class="tab" type="button" data-target="formation" aria-controls="formation">Formation</button>
-        <button class="tab" type="button" data-target="competences" aria-controls="competences">Compétences</button>
-        <button class="tab" type="button" data-target="documentation" aria-controls="documentation">Documentation</button>
-        <button class="tab" type="button" data-target="contact" aria-controls="contact">Contact</button>
-      </nav>
-
-      <div class="header-line" aria-hidden="true"></div>
+      <div id="menu" class="drawer" hidden>
+        <nav class="drawer__nav" aria-label="Menu mobile">
+          <a class="drawer__link" href="#accueil">Accueil</a>
+          <a class="drawer__link" href="#competences">CV</a>
+		  <a class="drawer__link" href="#documents">Epreuve E5</a>
+          <a class="drawer__link" href="#Formation">Formation</a>
+          <a class="drawer__link" href="#tp">TP</a>
+          <a class="drawer__link" href="#veille">Veille</a>
+          <a class="drawer__link" href="#contact">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <main class="container">
-
-      <!-- ═══════════════════════════════ ACCUEIL ═══════════════════════════════ -->
-      <section id="accueil" class="panel" data-panel>
-        <div class="hero">
-          <div class="hero-copy reveal">
-            <div class="eyebrow">BTS SIO · SISR</div>
-            <h1><span class="name-accent">Bienvenue sur<br /> mon Portfilio</span></h1>
-            <p class="lead">
-              Étudiant en <strong>BTS SIO (SISR)</strong>. Présentation rapide (à compléter) : ce que tu
-              fais, tes objectifs, et ce qui te motive.
+    <main id="contenu" class="page">
+      <section id="accueil" class="section hero">
+        <div class="hero__grid">
+          <div class="hero__copy">
+            <p class="pill" data-reveal>Disponible pour alternance</p>
+            <h1 class="hero__title" data-reveal>
+              Technicien Systèmes & Réseaux
+            </h1>
+            <p class="hero__lead" data-reveal>
+              Je m’appelle <strong>Gaëtan</strong>. J’aime concevoir des environnements stables
+              (Windows/Linux), aider les utilisateurs, automatiser ce qui doit l’être et sécuriser l’existant.
             </p>
 
-            <div class="hero-cta">
-              <a class="btn btn-primary" href="#formation" data-nav-link>
-                <span>Voir ma formation</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </a>
-              <a class="btn btn-ghost" href="#competences" data-nav-link>Découvrir mes compétences</a>
-            </div>
-
 
           </div>
 
-          <div class="hero-card reveal-delay-2" aria-label="Résumé du projet de fin d'étude">
-            <div class="card-badge">Projet fin d'étude</div>
-            <h2>Projet & missions</h2>
+          <aside class="hero__card" aria-label="Résumé">
+            <div class="card" data-reveal>
+              <div class="card__badge">En bref</div>
+              <h2 class="card__title">Ce que je peux apporter</h2>
+              <ul class="check">
+                <li>Déploiements propres et reproductibles</li>
+                <li>Réseau clair (adressage, VLAN)</li>
+                <li>Sauvegarde + restauration testée</li>
+                <li>Documentation simple à suivre</li>
+				<li>Assistance aux utilisateurs</li>
+              </ul>
+
+              <div class="card__meta">
+                <div class="meta">
+                  <div class="meta__k">Prochain objectif</div>
+                  <div class="meta__v">Poursuite d'étude pour un BAC+3, vise un BAC+5</div>
+                </div>
+                <div class="meta">
+                  <div class="meta__k">Disponibilité</div>
+                  <div class="meta__v">2026</div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      
+
+      <section id="competences" class="section">
+        <header class="section__head" data-reveal>
+          <p class="section__eyebrow">Curriculum vitæ</p>
+          <h2 class="section__title">CV</h2>
+          <p class="section__lead">Des compétences “terrain”, orientées exploitation, sécurité et documentation.</p>
+        </header>
+            <div class="hero__cta" data-reveal>
+              <a class="btn btn--outline" href="./Documents/cv/CV.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
+            </div>
+        <div class="cards cards--3">
+          <article class="card" data-reveal>
+            <h3 class="card__h">Systèmes</h3>
             <ul class="list">
-              <li><strong>Contexte</strong> : (à compléter).</li>
-              <li><strong>Mise en place</strong> : (à compléter).</li>
-              <li><strong>Administration</strong> : (à compléter).</li>
-              <li><strong>Sécurité / résultats</strong> : (à compléter).</li>
+              <li>Installation & durcissement (Windows/Linux)</li>
+              <li>AD DS, GPO, DNS/DHCP</li>
+              <li>Supervision & logs</li>
             </ul>
-
-            <div class="meta">
-              <div class="meta-item">
-                <span class="meta-label">Technologies</span>
-                <span class="meta-value">à compléter</span>
-              </div>
-              <div class="meta-item">
-                <span class="meta-label">Livrables</span>
-                <span class="meta-value">à compléter</span>
-              </div>
-            </div>
-          </div>
+          </article>
+          <article class="card" data-reveal>
+            <h3 class="card__h">Réseaux</h3>
+            <ul class="list">
+              <li>Adressage, VLAN, routage</li>
+              <li>Dépannage (ping/traceroute/Wireshark)</li>
+              <li>Documentation réseau</li>
+            </ul>
+          </article>
+          <article class="card" data-reveal>
+            <h3 class="card__h">Sécurité</h3>
+            <ul class="list">
+              <li>Principes de moindre privilège</li>
+              <li>Sauvegardes + restauration testée</li>
+              <li>Bonnes pratiques & hygiène</li>
+            </ul>
+          </article>
         </div>
       </section>
 
-      <!-- ═══════════════════════════════ FORMATION ═══════════════════════════════ -->
-      <section id="formation" class="panel" data-panel hidden>
-        <div class="section-head reveal">
-          <div class="eyebrow">Parcours</div>
-          <h2>Formation</h2>
-          <p class="muted">
-            Formation réalisées 
+      <section id="documents" class="section">
+        <header class="section__head" data-reveal>
+          <p class="section__eyebrow">Livrables</p>
+          <h2 class="section__title">Epreuve E5</h2>
+          <p class="section__lead">
+            PDF pour l’épreuve E5
           </p>
+        </header>
+		<div class="hero__cta" data-reveal>
+              <a class="btn btn--outline" href="./Documents/epreuve-e5/tableau de synthèse.xlsx" target="_blank" rel="noopener">Tableau des compétences (xlsx)</a>
+			  <a class="btn btn--outline" href="./Documents/epreuve-e5/tableau de synthèse.pdf" target="_blank" rel="noopener">Tableau des compétences (pdf)</a>
+        </div>
+        <div class="section__head" data-reveal style="margin-top: 0;">
+          <h3 class="section__title" style="font-size: 1.35rem;">Réalisation en cours de formation test</h3>
         </div>
 
-        <div class="grid-2">
-          <article class="card reveal">
-            <div class="card-icon" aria-hidden="true">🎓</div>
-            <h3>BTS SIO - SISR</h3>
-            <p class="muted">2024 - 2026</p>
-            <p><strong>Lycée Ozenne à Toulouse</strong>. En formation</p>
-          </article>
-
-          <article class="card reveal reveal-delay-1">
-            <div class="card-icon" aria-hidden="true">📚</div>
-            <h3>Bac Professionel SN RISC</h3>
-            <p class="muted">2021 - 2024</p>
-            <p><strong>Lycée Eugène Montel de Colomier</strong>. Reçu avec mention Bien</p>
-          </article>
+        <div class="cards cards--2">
+          <a class="card card--link" data-reveal href="./Documents/epreuve-e5/01-veille-feedflow.pdf" target="_blank" rel="noopener">
+            <div class="card__h">Mise en œuvre d'un dispositif de veille (Feedflow)</div>
+            <div class="card__p">Document PDF de la réalisation.</div>
+            <span class="card__arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="card card--link" data-reveal target="_blank" rel="noopener">
+            <div class="card__h">Conception du portfolio (HTML, CSS)</div>
+          </a>
+          <a class="card card--link" data-reveal href="./Documents/epreuve-e5/03-dmz-sftp-appli-frais.pdf" target="_blank" rel="noopener">
+            <div class="card__h">Serveur web en DMZ avec authentification SFTP pour développeurs pour le projet Appli-Frais</div>
+            <div class="card__p">Document PDF de la réalisation.</div>
+            <span class="card__arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="card card--link" data-reveal href="./Documents/epreuve-e5/04-reseau-m2l-vlan-routeurs.pdf" target="_blank" rel="noopener">
+            <div class="card__h">Séparation du réseau de la M2L avec VLAN et routeurs</div>
+            <div class="card__p">Document PDF de la réalisation.</div>
+            <span class="card__arrow" aria-hidden="true">→</span>
+          </a>
         </div>
 
-        <div class="timeline-section reveal">
-          <div class="timeline-header">
-            <div class="timeline-label">Chronologie</div>
-          </div>
-          <div class="timeline" role="list" aria-label="Parcours">
-            <div class="timeline-item reveal" role="listitem">
-              <div class="timeline-marker" aria-hidden="true">
-                <div class="timeline-dot"></div>
-                <div class="timeline-connector"></div>
-              </div>
-              <div class="timeline-content">
-                <div class="timeline-title">Semestre 1 (à compléter)</div>
-                <div class="timeline-text">Contenu / projets / compétences : (à compléter).</div>
-              </div>
-            </div>
-            <div class="timeline-item reveal reveal-delay-1" role="listitem">
-              <div class="timeline-marker" aria-hidden="true">
-                <div class="timeline-dot timeline-dot-last"></div>
-              </div>
-              <div class="timeline-content">
-                <div class="timeline-title">Semestre 2 (à compléter)</div>
-                <div class="timeline-text">Contenu / projets / compétences : (à compléter).</div>
-              </div>
-            </div>
-          </div>
+        <div class="section__head" data-reveal style="margin-top: 28px;">
+          <h3 class="section__title" style="font-size: 1.35rem;">Réalisations en milieu professionnel en cours de première année</h3>
+        </div>
+
+        <div class="cards cards--2">
+          <a class="card card--link" data-reveal target="_blank" rel="noopener">
+            <div class="card__h">Migration du parc informatique de Windows 10 à 11 (FOG, clé bootable ou Windows Update)</div>
+          </a>
+        </div>
+
+        <div class="section__head" data-reveal style="margin-top: 28px;">
+          <h3 class="section__title" style="font-size: 1.35rem;">Réalisations en milieu professionnel en cours de seconde année</h3>
+        </div>
+
+        <div class="cards cards--2">
+          <a class="card card--link" data-reveal href="./Documents/epreuve-e5/06-gpo-glpi-inventaire-sites.pdf" target="_blank" rel="noopener">
+            <div class="card__h">Déploiement GPO des agents GLPI avec tag différent pour l'inventaire de plusieurs sites</div>
+            <div class="card__p">Document PDF de la réalisation.</div>
+            <span class="card__arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="card card--link" data-reveal href="./Documents/epreuve-e5/07-documentation-vaulwarden.pdf" target="_blank" rel="noopener">
+            <div class="card__h">Documentation utilisateur pour Vaulwarden</div>
+            <div class="card__p">Document PDF de la réalisation.</div>
+            <span class="card__arrow" aria-hidden="true">→</span>
+          </a>
         </div>
       </section>
 
-      <!-- ═══════════════════════════════ COMPÉTENCES ═══════════════════════════════ -->
-      <section id="competences" class="panel" data-panel hidden>
-        <div class="section-head reveal">
-          <div class="eyebrow">Savoir-faire</div>
-          <h2>Compétences</h2>
-          <p class="muted">Liste tes compétences travaillées en SIO.</p>
-        </div>
+      <section id="Formation" class="section">
+        <header class="section__head" data-reveal>
+          <p class="section__eyebrow">Formation</p>
+          <h2 class="section__title">Formation</h2>
+          <p class="section__lead">Une timeline simple. Remplace les éléments par tes vraies dates et contenus.</p>
+        </header>
 
-        <div class="grid-3">
-          <article class="card skill-card reveal">
-            <div class="skill-icon" aria-hidden="true">⚙️</div>
-            <h3>Administration systèmes</h3>
-            <ul class="list compact">
-              <li>Compétence 1 (à compléter)</li>
-              <li>Compétence 2 (à compléter)</li>
-              <li>Compétence 3 (à compléter)</li>
-            </ul>
-          </article>
-
-          <article class="card skill-card reveal reveal-delay-1">
-            <div class="skill-icon" aria-hidden="true">🌐</div>
-            <h3>Réseaux</h3>
-            <ul class="list compact">
-              <li>Compétence 1 (à compléter)</li>
-              <li>Compétence 2 (à compléter)</li>
-              <li>Compétence 3 (à compléter)</li>
-            </ul>
-          </article>
-
-          <article class="card skill-card reveal reveal-delay-2">
-            <div class="skill-icon" aria-hidden="true">🔒</div>
-            <h3>Sécurité</h3>
-            <ul class="list compact">
-              <li>Compétence 1 (à compléter)</li>
-              <li>Compétence 2 (à compléter)</li>
-              <li>Compétence 3 (à compléter)</li>
-            </ul>
-          </article>
-
-          <article class="card skill-card reveal">
-            <div class="skill-icon" aria-hidden="true">💾</div>
-            <h3>Sauvegarde & continuité</h3>
-            <ul class="list compact">
-              <li>Compétence 1 (à compléter)</li>
-              <li>Compétence 2 (à compléter)</li>
-              <li>Compétence 3 (à compléter)</li>
-            </ul>
-          </article>
-
-          <article class="card skill-card reveal reveal-delay-1">
-            <div class="skill-icon" aria-hidden="true">🔧</div>
-            <h3>Dépannage & exploitation</h3>
-            <ul class="list compact">
-              <li>Compétence 1 (à compléter)</li>
-              <li>Compétence 2 (à compléter)</li>
-              <li>Compétence 3 (à compléter)</li>
-            </ul>
-          </article>
-
-          <article class="card skill-card reveal reveal-delay-2">
-            <div class="skill-icon" aria-hidden="true">🤖</div>
-            <h3>Automatisation</h3>
-            <ul class="list compact">
-              <li>Compétence 1 (à compléter)</li>
-              <li>Compétence 2 (à compléter)</li>
-              <li>Compétence 3 (à compléter)</li>
-            </ul>
-          </article>
-        </div>
-
+        <ol class="timeline">
+          <li class="timeline__item" data-reveal>
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <div class="timeline__when">2024 — en formation</div>
+              <h3 class="timeline__title">BTS SIO — SISR</h3>
+              <p class="timeline__text">Lycée Ozenne (Toulouse). Admin systèmes, réseaux, sécurité, docs.</p>
+            </div>
+          </li>
+          <li class="timeline__item" data-reveal>
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <div class="timeline__when">2021 — 2024</div>
+              <h3 class="timeline__title">Bac Pro SN — RISC</h3>
+              <p class="timeline__text">Lycée Eugène Montel (Colomiers). Mention Bien.</p>
+            </div>
+          </li>
+        </ol>
       </section>
 
-      <!-- ═══════════════════════════════ DOCUMENTATION ═══════════════════════════════ -->
-      <section id="documentation" class="panel" data-panel hidden>
-        <div class="section-head reveal">
-          <div class="eyebrow">Livrables</div>
-          <h2>Documentation</h2>
-          <p class="muted">
-            Ajoute tes livrables en déposant tes PDF dans le dossier <code>documents/</code>.<br />
-            Noms attendus : <code>schema-reseau.pdf</code>, <code>plan-sauvegarde.pdf</code>, <code>procedure-depannage.pdf</code>, <code>journal-projet.pdf</code>.
+      <section id="tp" class="section">
+        <header class="section__head" data-reveal>
+          <p class="section__eyebrow">Travaux pratiques</p>
+          <h2 class="section__title">TP</h2>
+          <p class="section__lead">
+            Première année : PDF dans <code>Documents/TP/premiere-annee/</code> (par thème). Libellés au format <strong>Thème — TP n</strong>. Liste générée depuis
+            <code>Documents/tp/tp-manifest.json</code> (script <code>regenerate-manifest.ps1</code> pour mettre à jour).
           </p>
-        </div>
+        </header>
 
-        <div class="grid-2 doc-grid">
-          <article class="card doc-card reveal">
-            <div class="doc-number">01</div>
-            <div class="doc-content">
-              <h3>Schéma réseau</h3>
-              <p class="muted">(à compléter).</p>
-              <a class="btn btn-outline" href="./documents/schema-reseau.pdf" target="_blank" rel="noopener">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v8M3.5 6l3.5 3 3.5-3M1 11h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Ouvrir le PDF
-              </a>
+        <article class="card tp-bts" data-reveal>
+          <h3 class="card__h">BTS SIO</h3>
+          <p class="card__p tp-bts__intro">Travaux pratiques (PDF). Chaque lien affiche le même type de titre : thème de dossier, tiret cadratin, numéro de TP.</p>
+          <div class="tp-bts__grid">
+            <div class="tp-bts__col">
+              <h4 class="tp-bts__year">Première année</h4>
+              <div class="tp-pdf-mount" id="tp-mount-y1" aria-busy="true" aria-label="Liste des TP première année"></div>
             </div>
-          </article>
-
-          <article class="card doc-card reveal reveal-delay-1">
-            <div class="doc-number">02</div>
-            <div class="doc-content">
-              <h3>Plan de sauvegarde</h3>
-              <p class="muted">(à compléter).</p>
-              <a class="btn btn-outline" href="./documents/plan-sauvegarde.pdf" target="_blank" rel="noopener">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v8M3.5 6l3.5 3 3.5-3M1 11h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Ouvrir le PDF
-              </a>
+            <div class="tp-bts__col">
+              <h4 class="tp-bts__year">Seconde année</h4>
+              <div class="tp-pdf-mount" id="tp-mount-y2" aria-busy="true" aria-label="Liste des TP seconde année"></div>
             </div>
-          </article>
+          </div>
+        </article>
+      </section>
 
-          <article class="card doc-card reveal">
-            <div class="doc-number">03</div>
-            <div class="doc-content">
-              <h3>Procédure de dépannage</h3>
-              <p class="muted">(à compléter).</p>
-              <a class="btn btn-outline" href="./documents/procedure-depannage.pdf" target="_blank" rel="noopener">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v8M3.5 6l3.5 3 3.5-3M1 11h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Ouvrir le PDF
-              </a>
-            </div>
-          </article>
+      <section id="veille" class="section">
+        <header class="section__head" data-reveal>
+          <p class="section__eyebrow">Veille</p>
+          <h2 class="section__title">Veille technologique</h2>
+          <p class="section__lead">
+            Listes de mes sources (sites, articles, flux, etc.).
+          </p>
+        </header>
 
-          <article class="card doc-card reveal reveal-delay-1">
-            <div class="doc-number">04</div>
-            <div class="doc-content">
-              <h3>Compte-rendu / journal de projet</h3>
-              <p class="muted">(à compléter).</p>
-              <a class="btn btn-outline" href="./documents/journal-projet.pdf" target="_blank" rel="noopener">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v8M3.5 6l3.5 3 3.5-3M1 11h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Ouvrir le PDF
-              </a>
-            </div>
-          </article>
-        </div>
-
-        <div class="callout reveal">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          <span><strong>Note :</strong> garde ces noms de fichiers pour que le site trouve automatiquement les PDF.</span>
+        <div class="cards cards--1">
+          <div class="card" data-reveal>
+            <ul class="list veille-sources">
+              <li><a class="link" href="https://www.01net.com/actualites/" target="_blank" rel="noopener noreferrer">01net</a></li>
+              <li><a class="link" href="https://www.it-connect.fr/actualites/" target="_blank" rel="noopener noreferrer">IT-Connect</a></li>
+              <li><a class="link" href="https://www.cnil.fr/fr" target="_blank" rel="noopener noreferrer">CNIL</a></li>
+              <li><a class="link" href="https://www.cert.ssi.gouv.fr/" target="_blank" rel="noopener noreferrer">CERT-FR</a></li>
+              <li><a class="link" href="https://lecrabeinfo.net/" target="_blank" rel="noopener noreferrer">Le Crabe Info</a></li>
+              <li><a class="link" href="https://www.ginjfo.com/" target="_blank" rel="noopener noreferrer">Ginjfo</a></li>
+              <li><a class="link" href="https://linux.developpez.com/" target="_blank" rel="noopener noreferrer">Flux Linux — Developpez</a></li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <!-- ═══════════════════════════════ CONTACT ═══════════════════════════════ -->
-      <section id="contact" class="panel" data-panel hidden>
-        <div class="section-head reveal">
-          <div class="eyebrow">Restons en contact</div>
-          <h2>Contact</h2>
-          <p class="muted">Contact uniquement par email, téléphone et LinkedIn (à compléter).</p>
-        </div>
+      <section id="contact" class="section">
+        <header class="section__head" data-reveal>
+          <p class="section__eyebrow">Contact</p>
+          <h2 class="section__title">On en parle ?</h2>
+          <p class="section__lead">Un message, une opportunité, un projet : je réponds rapidement.</p>
+        </header>
 
-        <div class="grid-2 contact-grid">
-          <div class="card contact-card reveal">
-            <h3>Email & téléphone</h3>
-            <div class="contact-lines">
-              <div class="contact-line">
-                <span class="contact-label">
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><rect x="1" y="2.5" width="12" height="9" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M1 5l6 4 6-4" stroke="currentColor" stroke-width="1.5"/></svg>
-                  Email
-                </span>
-                <a class="link" href="mailto:email@exemple.com">sanchez.p.gaetan@proton.me</a>
+        <div class="cards cards--1">
+          <div class="card" data-reveal>
+            <h3 class="card__h">Coordonnées</h3>
+            <div class="kv">
+              <div class="kv__row">
+                <div class="kv__k">Email</div>
+                <a class="kv__v kv__v--email link" href="mailto:sanchez.p.gaetan@proton.me">sanchez.p.gaetan@proton.me</a>
               </div>
-              <div class="contact-line">
-                <span class="contact-label">
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 2.5c0-.28.22-.5.5-.5h2.17c.23 0 .43.16.49.38l.8 3.2a.5.5 0 01-.22.56L4.4 6.84A8.02 8.02 0 007.16 9.6l1.2-1.34a.5.5 0 01.56-.22l3.2.8c.22.06.38.26.38.49V11.5a.5.5 0 01-.5.5C5.93 12 2 8.07 2 3.5v-1z" stroke="currentColor" stroke-width="1.5"/></svg>
-                  Téléphone
-                </span>
-                <a class="link" href="tel:+33000000000">+33 0 00 00 00 00</a>
+              <div class="kv__row">
+                <div class="kv__k">Téléphone</div>
+                <a class="kv__v link" href="tel:+33682288382">+33 6 82 28 83 82</a>
               </div>
-            </div>
-          </div>
-
-          <div class="card contact-card reveal reveal-delay-1">
-            <h3>LinkedIn</h3>
-            <div class="contact-lines">
-              <div class="contact-line">
-                <span class="contact-label">
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><rect x="1" y="1" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M4 6v4M4 4v.5M7 10V7.5c0-.83.67-1.5 1.5-1.5S10 6.67 10 7.5V10M7 6v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                  LinkedIn
-                </span>
-                <a class="link" href="#" onclick="return false;">Lien (à compléter)</a>
+              <div class="kv__row">
+                <div class="kv__k">Adresse</div>
+                <div class="kv__v">Toulouse (31) — France</div>
               </div>
-            </div>
-            <div class="callout subtle">
-              <strong>À compléter :</strong> remplace le lien LinkedIn (et le email/téléphone si besoin).
+              <div class="kv__row">
+                <div class="kv__k"> Ctrl+Shift+Win+Alt+L </div>
+                <a class="kv__v link" href="https://www.linkedin.com/in/ga%C3%ABtan-sanchez-porro-957842298/">LinkedIn</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <footer class="site-footer">
-        <div class="footer-inner">
-          <div class="footer-brand">SIO</div>
-          <div class="muted">&copy; <span id="year"></span> Gaëtan SANCHEZ-PORRO — Portfolio</div>
+      <footer class="footer">
+        <div class="footer__inner">
+          <span class="footer__muted">© <span id="year"></span> Gaëtan</span>
+          <a class="footer__muted link" href="#accueil">Retour en haut</a>
         </div>
       </footer>
     </main>
