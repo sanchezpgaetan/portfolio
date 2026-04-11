@@ -18,10 +18,7 @@ Documents/
   TP/
     premiere-annee/<thème>/*.pdf   (ex. Architecture, Cyber, Support, Système et réseau)
     seconde-annee/<thème>/*.pdf
-  tp/
-    tp-manifest.json          (rel + libellé « Thème — TP n »)
-    regenerate-manifest.ps1   (régénère le manifeste après ajout de PDF)
-      -> section TP : script.js charge tp-manifest.json
+      -> section TP : liens et classeurs (details) dans index.html, même arborescence que sur le disque
 
   Section « Veille technologique »
     Les sources sont des liens web dans index.html (grille 2 colonnes),

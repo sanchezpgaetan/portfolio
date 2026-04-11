@@ -222,7 +222,7 @@
         <header class="section__head" data-reveal>
           <p class="section__eyebrow">Formation</p>
           <h2 class="section__title">Formation</h2>
-          <p class="section__lead">Une timeline simple. Remplace les éléments par tes vraies dates et contenus.</p>
+          <p class="section__lead">Mon parcours réalisé</p>
         </header>
 
         <ol class="timeline">
@@ -250,22 +250,57 @@
           <p class="section__eyebrow">Travaux pratiques</p>
           <h2 class="section__title">TP</h2>
           <p class="section__lead">
-            Première année : PDF dans <code>Documents/TP/premiere-annee/</code> (par thème). Libellés au format <strong>Thème — TP n</strong>. Liste générée depuis
-            <code>Documents/tp/tp-manifest.json</code> (script <code>regenerate-manifest.ps1</code> pour mettre à jour).
+            PDF des travaux pratique réalisé en formations 
           </p>
         </header>
 
         <article class="card tp-bts" data-reveal>
           <h3 class="card__h">BTS SIO</h3>
-          <p class="card__p tp-bts__intro">Travaux pratiques (PDF). Chaque lien affiche le même type de titre : thème de dossier, tiret cadratin, numéro de TP.</p>
+          <p class="card__p tp-bts__intro">TP faits en BTS SIO à Ozenne</p>
           <div class="tp-bts__grid">
             <div class="tp-bts__col">
               <h4 class="tp-bts__year">Première année</h4>
-              <div class="tp-pdf-mount" id="tp-mount-y1" aria-busy="true" aria-label="Liste des TP première année"></div>
+              <div class="tp-folders" aria-label="TP première année par thème">
+                <details class="tp-folder">
+                  <summary>Architecture</summary>
+                  <ul class="list">
+                    <li><a class="link" href="./Documents/TP/premiere-annee/Architecture/TP1.pdf" target="_blank" rel="noopener">Architecture — TP 1</a></li>
+                    <li><a class="link" href="./Documents/TP/premiere-annee/Architecture/TP2.pdf" target="_blank" rel="noopener">Architecture — TP 2</a></li>
+                  </ul>
+                </details>
+                <details class="tp-folder">
+                  <summary>Cyber</summary>
+                  <ul class="list">
+                    <li><a class="link" href="./Documents/TP/premiere-annee/Cyber/TP1%20Sanchez-Porro.pdf" target="_blank" rel="noopener">Cyber — TP 1</a></li>
+                    <li><a class="link" href="./Documents/TP/premiere-annee/Cyber/Sanchez-Porro_TP2.pdf" target="_blank" rel="noopener">Cyber — TP 2</a></li>
+                    <li><a class="link" href="./Documents/TP/premiere-annee/Cyber/TP3.pdf" target="_blank" rel="noopener">Cyber — TP 3</a></li>
+                    <li><a class="link" href="./Documents/TP/premiere-annee/Cyber/TP4_Sanchez-Porro_Gaetan.pdf" target="_blank" rel="noopener">Cyber — TP 4</a></li>
+                    <li><a class="link" href="./Documents/TP/premiere-annee/Cyber/TP5_Sanchez-Porro.pdf" target="_blank" rel="noopener">Cyber — TP 5</a></li>
+                    <li><a class="link" href="./Documents/TP/premiere-annee/Cyber/TP6_Sanchez-Porro_Gaetan.pdf" target="_blank" rel="noopener">Cyber — TP 6</a></li>
+                  </ul>
+                </details>
+                <details class="tp-folder">
+                  <summary>Support</summary>
+                  <ul class="list">
+                    <li><a class="link" href="./Documents/TP/premiere-annee/Support/TP1%20_%20Help%20Desk%20-%20Assistance%20%C3%A0%20distance.pdf" target="_blank" rel="noopener">Support — TP 1</a></li>
+                    <li><a class="link" href="./Documents/TP/premiere-annee/Support/TP2-SANCHEZ-PORRO.pdf" target="_blank" rel="noopener">Support — TP 2</a></li>
+                    <li><a class="link" href="./Documents/TP/premiere-annee/Support/Tp3%20-%20commandes%20r%C3%A9seaux%20et%20journaux%20d_activit%C3%A9%202023.pdf" target="_blank" rel="noopener">Support — TP 3</a></li>
+                  </ul>
+                </details>
+                <details class="tp-folder">
+                  <summary>Système et réseau</summary>
+                  <ul class="list">
+                    <li><a class="link" href="./Documents/TP/premiere-annee/Syst%C3%A8me%20et%20r%C3%A9seau/TP1.pdf" target="_blank" rel="noopener">Système et réseau — TP 1</a></li>
+                    <li><a class="link" href="./Documents/TP/premiere-annee/Syst%C3%A8me%20et%20r%C3%A9seau/TP2.pdf" target="_blank" rel="noopener">Système et réseau — TP 2</a></li>
+                  </ul>
+                </details>
+              </div>
             </div>
             <div class="tp-bts__col">
               <h4 class="tp-bts__year">Seconde année</h4>
-              <div class="tp-pdf-mount" id="tp-mount-y2" aria-busy="true" aria-label="Liste des TP seconde année"></div>
+              <div class="tp-folders" aria-label="TP seconde année par thème">
+                <p class="card__p">Du à des problème techniques, je n'ai pas pu mettre les TP</p>
+              </div>
             </div>
           </div>
         </article>
